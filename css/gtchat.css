@@ -1,0 +1,40 @@
+/*
+    Description:
+    Text Coloring in Growtopia Stylesheet v1.0
+    Made by Datario on Jan 16, 2021
+    ***
+    How to Use it:
+    1. Just use the .gt-clr-* class on any HTML element, where * represents the character you would type in the game to color the text. Make sure there is only one such class in any HTML element.
+    2. Some characters like ^, $, #, etc., can't de directly used in class names, so you need to type its entity name to use it properly.
+    ***
+    (c) 2021-2021 Datario. All Rights Reserved.
+    This CSS stylesheet is in no way affiliated with Ubisoft Entertainment® or Growtopia
+*/
+
+.gt-clr-0 {color: #ffffff;}
+.gt-clr-1 {color: #adf3ff;}
+.gt-clr-2 {color: #4afb00;}
+.gt-clr-3 {color: #bddbff;}
+.gt-clr-4 {color: #ff2511;}
+.gt-clr-5 {color: #eeb6ff;}
+.gt-clr-6 {color: #ffca73;}
+.gt-clr-7 {color: #e5e5e6;}
+.gt-clr-8 {color: #ff9242;}
+.gt-clr-9 {color: #ffe7fb;}
+.gt-clr-b {color: #000000;}
+.gt-clr-w {color: #ffffff;}
+.gt-clr-p {color: #f8ddef;}
+.gt-clr-o {color: #e4ddbb;}
+.gt-clr-hat {color: #99ff66;} /* ! */
+.gt-clr-dollar {color: #ffff99;} /* $ */
+.gt-clr-num {color: #ff00cc;} /* # */
+.gt-clr-commat {color: #ff9999;} /* @ */
+.gt-clr-excl1 {color: #ccffff;} /* ! */
+.gt-clr-q {color: #112676;}
+.gt-clr-e {color: #00bfff;}
+.gt-clr-c {color: #00ffff;}
+.gt-clr-r {color: #319e22;}
+.gt-clr-t {color: #006400;}
+.gt-clr-excl2 {color: #e0ffff;} /* ! */
+.gt-clr-a {color: #696969;}
+.gt-clr-s {color: #808080;}

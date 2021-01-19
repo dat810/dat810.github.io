@@ -1,0 +1,85 @@
+/* A stylesheet by Datario for personal use */
+
+:root {
+  --MONO: 0;
+  --CASL: 0;
+  --wght: 400;
+  --slnt: 0;
+  --CRSV: 0.5;
+}
+
+@font-face {
+  font-family: "Recursive";
+  src: url("/fonts/Recursive_VF_1.070.woff2") format("woff2-variations");
+  font-weight: 300 1000;
+}
+
+.col-01 {width: 8.3333%;}
+.col-02 {width: 16.6667%;}
+.col-03 {width: 25%;}
+.col-04 {width: 33.3333%;}
+.col-05 {width: 41.6667%;}
+.col-06 {width: 50%;}
+.col-07 {width: 58.3333%;}
+.col-08 {width: 66.6667%;}
+.col-09 {width: 75%;}
+.col-10 {width: 83.3333%;}
+.col-11 {width: 91.6667%;}
+.col-12 {width: 100%;}
+
+[class^="col-"] {float: left;}
+.row {clear: both;}
+
+@media screen and (max-width:768px) {
+  [class^="col-"] {
+    width: 100%;
+    float: none;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-variation-settings: "MONO" var(--MONO), "CASL" var(--CASL), 
+  "wght" var(--wght), "slnt" var(--slnt), "CRSV" var(--CRSV);
+  text-decoration: none;
+}
+
+html, body {
+  font-family: 'Recursive', sans-serif;
+  scroll-behavior: smooth;
+  font-size: 16px;
+  --wght: 425;
+  line-height: 2em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Recursive', sans-serif;
+  --wght: 850;
+  --CASL: 0.25;
+}
+
+code, kbd, pre, samp {
+  font-family: 'Recursive', monospace;
+  --wght: 500;
+  --MONO: 1;
+}
+
+address, cite, dfn,
+em, i, var {
+  font-style: normal;
+  --slnt: -15;
+}
+
+b, strong {--wght: 750};
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}

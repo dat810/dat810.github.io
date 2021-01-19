@@ -1,0 +1,66 @@
+article {padding: 32px 15%;}
+
+@media only screen and (max-width: 600px) {
+	article {padding: 32px;}
+}
+
+h1.article-header {
+	font-size: 3em;
+	margin: 24px 0;
+	line-height: 1em;
+}
+
+p.article-header {
+	font-size: 1.25em;
+	margin: 8px 0;
+}
+
+.latest-post-date.article-header {
+	padding-bottom: 32px;
+}
+
+article > p {
+	line-height: 1.5em;
+	padding-bottom: 1.25em;
+}
+
+article > p:first-of-type::first-letter {
+	float: left;
+	font-size: 3.5em;
+	padding: 2px 4px 0 0;
+}
+
+article a, article a:link, article a:visited {
+	cursor: pointer;
+	text-decoration: dotted;
+	color: var(--white-40);
+	transition-duration: 0.3s;
+}
+
+article a:hover {color: var(--cerulean-crayola)};
+ul, ol {list-style-position: outside;}
+ul li, ol li {line-height: 1.5em;}
+ul li:last-of-type, ol li:last-of-type {padding-bottom: 1.25em;}
+
+.pagination {
+	display: flex;
+	justify-content: space-between;
+	align-content: center;
+}
+
+.pagination a {
+	cursor: pointer;
+	border: 2px solid var(--white-40);
+	text-align: center;
+	padding: 4px 8px;
+	border-radius: 4px;
+}
+
+.pagination a:hover {border-color: var(--cerulean-crayola);}
+
+@media only screen and (max-width: 600px) {
+	.pagination a {
+		display: block;
+		width: 100%;
+	}
+}

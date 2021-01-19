@@ -1,0 +1,9 @@
+.badge {
+    color: white;
+    padding: 4px;
+    border-radius: 4px;
+}
+
+.newest {background-color: dodgerblue;}
+.serious {background-color: orange;}
+.good {background-color: green;}

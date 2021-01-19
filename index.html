@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  	<meta charset="UTF-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  	<meta name="description" content="A Datario blog on my stories and many others.">
+  	<meta name="keywords" content="datario, blog">
+  	<title>Datario Blog</title>
+  	<link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png">
+  	<link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png">
+  	<link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16x16.png">
+  	<link rel="manifest" href="/site.webmanifest">
+  	<link rel="preconnect" href="https://fonts.gstatic.com">
+  	<!-- <link href="https://fonts.googleapis.com/css2?family=Recursive:slnt,wght,CASL,CRSV,MONO@-15..0,300..1000,0..1,0..1,0..1&display=swap" rel="stylesheet"> -->
+  	<link rel="stylesheet" href="/css/datario.css">
+  	<link rel="stylesheet" href="/css/style.css">
+	  <link rel="stylesheet" href="/css/noscript.css">
+	  <link rel="stylesheet" href="/css/badge.css">
+  	<script src="/js/main.js" defer></script>
+</head>
+<body>
+
+<div id="sideNav" class="side-nav">
+  	<a href="javascript:void(0)" onclick="closeSideNav()" class="closeBtn">&times;</a>
+  	<ul>
+    	<li><a onclick="closeSideNav()" href="/index.html#posts">Posts</a></li>
+    	<li><a onclick="closeSideNav()" href="/index.html#about">About</a></li>
+    	<li><a onclick="closeSideNav()" href="/index.html#faq">FAQ</a></li>
+  	    <li><a onclick="closeSideNav()" href="/index.html#contact">Contact</a></li>
+  	</ul>
+</div>
+
+<header id="topNav" class="web-header">
+    <a href="/index.html">
+		<img src="/img/datario.png" alt="Datario Logo">
+ 	</a>
+  	<nav>
+    	<ul>
+    		<li><a href="/index.html#posts">Posts</a></li>
+    		<li><a href="/index.html#about">About</a></li>
+    		<li><a href="/index.html#faq">FAQ</a></li>
+    		<li><a href="/index.html#contact">Contact</a></li>
+    		<li><a class="openBtn" href="javascript:void(0)" onclick="openSideNav()">Menu</a></li>
+      	</ul>
+    </nav>
+</header>
+
+<div class="main-content">
+<noscript>
+	<div>
+	<h1>Attention!</h1>
+	<p>Javascript is currently <em>disabled</em> or <em>not supported</em> in your browser. As a result, some part of mywebsite won't function correctly.
+	<p>Here are some ways to enable Javascript:</p>
+	<ul>
+		<li>Go to <a href="https://enable-javascript.com/">this website</a>, choose your browser, and follow thedirections.</li>
+		<li>Upgrade your browser to the newest versions.</li>
+		<li>If you are using Internet Explorer, I highly recommend you to use a better alternative such as Firefox orGoogle Chrome.</li>
+	</ul>
+	<p>I won't go away unless Javascript is properly enabled.</p>
+	</div>
+</noscript>
+<!-- DON'T CHANGE ABOVE -->
+<main>
+	<h1 style="margin: 16px 0 32px;">Datario Blog</h1>
+   <p>Welcome to the blog of <strong>Datario</strong>, a blog on what I have learned, experienced, and even stuff like my opinions on some particular Internet memes.</p><br/>
+   <p>Be careful! S**tposts ahead. Watch your steps!</p>
+</main>
+
+<div id="posts" class="latest-post-entries">
+	<section>
+		<h1>Posts</h1>
+		<p>This list shows all of my blog articles posted on this website. They are displayed in reversed-chronological order. Newest ones are marked with a NEW! badge.</p>
+	</section>
+	<div class="latest-posts">
+		<a href="/blog/2021/01/19/hello-world/index.html">
+		<article class="post-entry">
+			<!-- <img src="/img/code-3600810_1280.png" alt="Hello World Image"> -->
+			<h2>Hello World! <span class="badge newest">NEW!</span></h2>
+			<p class="latest-post-desc">An Introduction to my Blog Website, Hooray!</p>
+			<p class="latest-post-date">Posted on <time datetime="2021-01-19">January 19, 2021</time></p>
+		</article>
+	    </a>
+	</div>
+</div>
+
+<div id="about" class="about-me">
+	<section>
+	  	<h1>About Me</h1>
+		<p class="latest-post-date">Updated on <time datetime="2021-01-13">January 13, 2021</time></p>
+	</section>
+	<img src="" alt="Photo of me">
+	<p>I am just a casual guy who likes computers. I am enthusiastic about programming languages like Java and Python. Besides that, I am also interested in website development and data visualizations. Currently, I am focusing on front-end development. I would like to share my work with you.</p>
+</div>
+
+<div id="faq" class="faq">
+ 	<section>
+		<h1>Frequently Asked Questions</h1>
+		<p>Just click on one of these boxes!</p>
+	</section>
+	<button class="accordion" onclick="toggleAcc()">Where are you form?</button>
+	<section class="accordion-txt">
+		<p>I come from China. That's it.</p>
+	</section>
+	<button class="accordion" onclick="toggleAcc()">How many languages can you speak?</button>
+	<section class="accordion-txt">
+		<p>Two. Since I am from China, I can speak Chinese. I also speak English because I am planning to study abroad in the US (which may not be possible due to COVID-19).</p>
+	</section>
+	<button class="accordion" onclick="toggleAcc()">Why the name "Datario"?</button>
+	<section class="accordion-txt">
+		<p>It's because I like data visualizations (such as bar chart races and line graphs) and I wanted a username that emphasizes that I make data visualizations. I chose "Datario" for no reason at all because it just came out of my mind and it was not taken. <br><i>Note: I was later shocked when I tried to make a GitHub account because "Datario" was taken there! So it became "datario-viz" instead.</i></p>
+	</section>
+	<button class="accordion" onclick="toggleAcc()">Why did you start doing such things? </button>
+	<section class="accordion-txt">
+		<p>It's because of inspiration. Long time ago in November 2018, I encountered data visualization videos on YouTube. They were uploaded by <a href="https://www.youtube.com/channel/UCy0dKy89rZFR8OCbAT69wcQ" target="_blank" title="Click to see WawamuStats's YouTube Channel">WawamuStats</a>. I wondered how these videos even made, but I had no clue. So I kept watching these, and they are getting more attractive over time, with more views. Later I also discovered a channel named <a href="https://www.youtube.com/user/1abacaba1" target="_blank" title="Click to see Abacaba's YouTube Channel">Abacaba</a> (owned by carykh, co-creator of BFDI). That channel has very creative visualizing methods, not only limited to bar chart races, but also buddle charts and line graphs, which astonished me. Moreover I learned that the creator was only 19 when these masterpieces were published (Was gonna say how many years I was older than him but that would spoil my own age so yeah)!</p>
+		<p>In 2019, a channel named <a href="https://www.youtube.com/channel/UCkWbqlDAyJh2n8DN5X6NZyg" target="_blank" title="Click to see Data is Beautiful's YouTube Channel">Data is Beautiful</a> (which unfortunately stopped uploading videos) came out of nowhere and surpassed most other data visualization channels at that time. It is also that moment that I learned that these bar chart race videos are made in <a href="https://flourish.studio/2019/03/21/bar-chart-race/" target="_blank" title="Click to see Flourish's blog post on How to Make a Bar Chart Race">Flourish Studio</a>, a free data visualization tool online. However, that is different from what I had saw lasy year by WawamuStats.</p>
+		<p>This year, I began to use <a href="https://www.bilibili.com/" target="_blank" title="Bilibili official website (Prepare your translates because it is Chinese only)">Bilibili</a>, a Chinese video platform with bullet chats, to explore whether these catagories of videos exist, and I wasn't surprised to find these UPs (In bilibili, channel owners are called "UP"s.) having uploaded these videos. When I watched those videos, I almost immediately recognized the style of the bar chart race from 2018. One of the most amazing one is someone called <a href="https://space.bilibili.com/1850091" target="_blank" title="Click to see Jannchie's Bilibili profile">Jannchie</a>, because when I went to <a href="https://github.com/Jannchie/Historical-ranking-data-visualization-based-on-d3.js" target="_blank" title="Click to see the Bar CHart Race tool made by Jannchie">his GitHub page</a> , I was very shocked to find out that these bar chart race codes were written and published by him!</p>
+		<p>And that's how I got huge inspiration to produce such things.</p>
+	</section>
+	<button class="accordion" onclick="toggleAcc()">Do you play any games?</button>
+	<section class="accordion-txt">
+		<p>Yes, of course! I mainly play Tap Titans 2 because I like incremental games. Sometimes I also play Minecraft, one of the most popular games in the world, and Growtopia, a game by Ubisoft.</p>
+	</section>
+</div>
+
+<div id="contact" class="contact">
+	<section>
+		<h1>Contact Me</h1>
+		<p>Have an idea that you want to submit? Or you like my projects?</p>
+		<p>That's good to know! You can contact me in the following ways:</p>
+		<h3>Email</h3>
+		<code><a href="mailto:puregoldswordtt2@gmail.com" >puregoldswordtt2@gmail.com</a></code>
+	</section>
+	<h3>Find me in these platforms</h3>
+	<ul>
+		<li>Instagram: <a href="https://www.instagram.com/mrdatario" target="_blank"><code>@mrdatario</code></a></li>
+		<li>YouTube: <a href="https://www.youtube.com/channel/UCWS-r65dQbblkAqe_fWaJxg" target="_blank"><code>Datario</code></a></li>
+		<li>GitHub: <a href="https://www.github.com/datario-viz" target="_blank"><code>datario-viz</code></a></li>
+		<li>Reddit: <a href="https://www.reddit.com/user/pgstt2" target="_blank"><code>u/pgstt2</code></a></li>
+		<li>Growtopia Forums: <a href="https://www.growtopiagame.com/forums/member/405730-boots-of-hermes" target="_blank"><code>Boots of Hermes</code></a></li>
+	</ul>
+	<p style="color: #7f0000;">WARNING: Make sure you comply with the policies provided by these platforms above when submitting messages!</p>
+</div>
+<!-- DON"T CHANGE BELOW -->
+<footer>
+	<h3>Menu</h3>
+	<ul class="footer-menu">
+		<li><a href="/index.html#posts">Posts</a></li>
+		<li><a href="/index.html#about">About</a></li>
+		<li><a href="/index.html#faq">FAQ</a></li>
+		<li><a href="/index.html#contact">Contact</a></li>
+	</ul>
+	<h3>Legal</h3>
+	<ul class="legal">
+		<li><a href="/tos.html">Terms of Service</a></li>
+		<li><a href="/privacy.html">Privacy Policy</a></li>
+	</ul>
+	<h3>Credits</h3>
+	<p>Font is set in <a href="https://recursive.design"  target="_blank">Recursive</a></p>
+	<p>Color palette generated by <a href="https://coolors.co"  target="_blank">coolors.co</a></p>
+	<p class="footer-quote">Let's do better!</p>
+	<hr style="margin: 4px 0">
+	<p class="copyright">&copy; 2021-<script>document.write(new Date().getFullYear())</script> 
+    <a href="/index.html">Datario</a>. All Rights Reserved.</p>
+	<p class="copyright">Website proudly created with &#10084; by Datario, myself.</p>
+</footer>
+</div>
+
+</body>
+</html>
