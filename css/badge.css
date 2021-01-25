@@ -1,9 +1,16 @@
 .badge {
     color: white;
-    padding: 4px;
+    padding: 2px 4px 2px 4px;
     border-radius: 4px;
+    margin: 0 4px 0 4px;
+    font-size: 1em;
 }
 
+/* General Badges */
 .newest {background-color: dodgerblue;}
-.serious {background-color: orange;}
-.good {background-color: green;}
+.technical {background-color: olive;}
+
+/* Gaming-Related Badges */
+.tt2 {background-color: orange;}
+.growtopia {background-color: mediumpurple;}
+.minecraft {background-color: seagreen;}

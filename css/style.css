@@ -29,11 +29,18 @@ code {
   background-color: var(--white-90);
   border: 1px solid var(--white-70);
   border-radius: 4px;
-  padding: 2px 4px;
+  padding: 1px 4px;
   margin: 0 2px;
 }
 
+*::selection {
+  background-color: #f5ff99;
+  color: #a6b10a;
+}
+
 /* END INITIALIZATION */
+
+#topNav {z-index: 20;}
 
 header#topNav.web-header > a > img {
   --abs: 12px;
@@ -163,6 +170,10 @@ main p {font-size: 1.25em;}
   box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2), 0 4px 10px 0 rgba(0, 0, 0, 0.19);
 }
 
+#posts .latest-posts hr {
+  border: 1px solid var(--white-80);
+}
+
 #posts a {
   display: block;
   transition-duration: 0.3s;
@@ -170,6 +181,8 @@ main p {font-size: 1.25em;}
 }
 
 #posts a:hover {opacity: 0.6;}
+#posts a:not(:first-of-type) {padding-top: 12px;}
+#posts a:not(:last-of-type) {padding-bottom: 24px;}
 
 .subject {
   font-family: Recursive, sans-serif;

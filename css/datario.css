@@ -51,7 +51,7 @@ html, body {
   scroll-behavior: smooth;
   font-size: 16px;
   --wght: 425;
-  line-height: 2em;
+  line-height: 1.75em;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -77,9 +77,4 @@ b, strong {--wght: 750};
 a {
   text-decoration: none;
   color: black;
-}
-
-img {
-  width: 100%;
-  height: auto;
 }
