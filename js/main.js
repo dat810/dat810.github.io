@@ -1,6 +1,6 @@
 // My Greeting Message :)
 (function() {
-    console.log("Hello, strangers!")
+    console.log("Hello, strangers!");
 })();
 
 // START (Open / close side nav)
