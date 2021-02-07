@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="keywords" content="datario, tools">
+    <meta name="description" content="Welcome to my (Datario's) Tool Collection, where you can use them without any restrictions. You can share it to your friends!">
+    <!-- <link rel="preconnect" href="https://fonts.gstatic.com"> -->
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;500&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">  -->
+    <meta property="og:title" content="Datario's Tool Collection">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://datario-viz.github.io/tools/">
+    <link rel="stylesheet" href="/css/tools/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+    <title>Datario's Tool Collection</title>
+</head>
+<body>
+    <div class="container">
+        <div class="wrap">
+            <small>&laquo; Back to <a href="/">https://datario-viz.github.io/</a></small>
+            <header>
+                <button onclick="toggleDropdown()" class="ddbtn">Menu</button>
+                <ul id="ddcontent">
+                    <li><h2>Datario's Tool Collection</h2></li>
+                    <li><a href="/tools/">Home</a></li>
+                    <li><a href="/tools/about/">About</a></li>
+                    <li><button onclick="randomTheme()">Random Color</button></li>
+                </ul>
+            </header>
+            <h1>Home</h1>
+            <p>Welcome to my (Datario's) Tool Collection, where you can use them without any restrictions. You can share it to your friends! More tools will be added here eventually, so stay tuned!</p>
+            <h2 class="latest">Recently Added</h2>
+            <div class="featured-tools-container">
+                <div class="tool-div">
+                    <a href="/tools/cubic/">
+                        <p class="tool-name">Cubic Function Calculator</p>
+                        <p class="tool-desc">This is a calculator that outputs the function values of a given array of numbers. It functions exactly like my calculator, and it is very versatile.</p>
+                    </a>
+                </div>
+                <!-- <div class="tool-div">
+                    <a href="">
+                        <p class="tool-name">Coming Soon</p>
+                        <p class="tool-desc">Coming Soon</p>
+                    </a>
+                </div> -->
+            </div>
+            <h2 class="all-tools">All Tools (<span id="tool-counter"></span>)</h2>
+            <div class="tools-container">
+                <div class="tool-div">
+                    <a href="/tools/cubic/">
+                        <p class="tool-name">Cubic Function Calculator</p>
+                        <p class="tool-desc">This is a calculator that outputs the function values of a given array of numbers. It functions exactly like my calculator, and it is very versatile.</p>
+                    </a>
+                </div>
+                <!-- <div class="tool-div">
+                    <a href="">
+                        <p class="tool-name">Coming Soon</p>
+                        <p class="tool-desc">Coming Soon</p>
+                    </a>
+                </div> -->
+            </div>
+        </div>
+        <footer>
+            <hr>
+            <p>
+                &copy; 2021-<span id="year"></span> Datario. All Rights Reserved.<br>
+                Website proudly created with &hearts; by Datario, myself.
+            </p>
+            <div class="social-bar">
+                <a href="https://www.instagram.com/mrdatario" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.youtube.com/channel/UCWS-r65dQbblkAqe_fWaJxg" target="_blank"><i class="fab fa-youtube"></i></a>
+                <a href="https://www.github.com/datario-viz" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.reddit.com/user/pgstt2" target="_blank"><i class="fab fa-reddit"></i></a>
+            </div>
+            <p><a href="/tos.html" target="_blank">Terms of Service</a>&nbsp;&nbsp;<a href="/privacy.html" target="_blank">Privacy Policy</a></p>
+        </footer>
+    </div>
+</body>
+<script src="/js/tools/cubic/cubic.js"></script>
+<script src="/js/tools/randomtheme.js"></script>
+<script>
+    var allToolsCount = document.querySelectorAll(".tools-container .tool-div").length;
+    var spanCounter = document.getElementById("tool-counter");
+    spanCounter.innerHTML = allToolsCount;
+</script>
+</html>

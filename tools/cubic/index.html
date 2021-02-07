@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="keywords" content="cubic, function, calculator, algebra">
+    <meta name="description" content="This is a calculator that outputs the function values of a given array of numbers.">
+    <!-- <link rel="preconnect" href="https://fonts.gstatic.com"> -->
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;500&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet"> -->
+    <meta property="og:title" content="Cubic Function Calculator | Datario's Tool Collection">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://datario-viz.github.io/tools/cubic/">
+    <link rel="stylesheet" href="/css/tools/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+    <title>Cubic Function Calculator | Datario's Tool Collection</title>
+</head>
+<body>
+    <div class="container">
+        <div class="wrap">
+            <small>&laquo; Back to <a href="/">https://datario-viz.github.io/</a></small>
+            <header>
+                <button onclick="toggleDropdown()" class="ddbtn">Menu</button>
+                <ul id="ddcontent">
+                    <li><h2>Datario's Tool Collection</h2></li>
+                    <li><a href="/tools/">Home</a></li>
+                    <li><a href="/tools/about/">About</a></li>
+                    <li><button onclick="randomTheme()">Random Color</button></li>
+                </ul>
+            </header>
+            <h1>Cubic Function Calculator</h1>
+            <p>This is a calculator that outputs the function values of a given array of numbers. It functions exactly like my calculator, and it is very versatile.</p>
+            <h2>How to Use it?</h2>
+            <ol>
+                <li>Input the coefficients <var>a</var>, <var>b</var>, <var>c</var> and <var>d</var> into the function template.</li>
+                <ul>
+                    <li>If you want a <strong>quadratic function</strong>, leave <var>a</var> empty.</li>
+                    <li>If you want a <strong>linear function</strong>, leave <var>a</var> and <var>b</var> empty.</li>
+                    <li>In general, you can have any expression with maximum power of 3. Empty inputs will be treated as zero.</li>
+                </ul>
+                <li>Input the <code>START</code>, <code>END</code> and <code>STEP</code> values. Hover on them below to see the information.</li>
+                <li>Click the <code>Calculate!</code> button to execute.</li>
+                <li>The result will be displayed in the <a href="#results">Results</a> section.</li>
+            </ol>
+            <h2>The Calculator</h2>
+            <p>Type in the Function:</p>
+            <p><span class="fx"><var>f</var>(<var>x</var>)</span> = <input type="text" id="a" placeholder="a"> <var>x</var><sup>3</sup> + <input type="text" id="b" placeholder="b"> <var>x</var><sup>2</sup> + <input type="text" id="c" placeholder="c"> <var>x</var> + <input type="text" id="d" placeholder="d"></p>
+            <p>Set up the Range:</p>
+            <ul>
+                <li><code title="START, the starting value">START</code> <input type="text" id="start" placeholder="1"></li>
+                <li><code title="END, the ending value, inclusive">END</code> <input type="text" id="end" placeholder="10"></li>
+                <li><code title="STEP, the incrementation">STEP</code> <input type="text" id="step" placeholder="5"></li>
+            </ul>
+            <button type="button" onclick="calculate()" class="calculate">Calculate!</button>
+            <p id="results">Results:</p>
+            <!-- Messages -->
+            <div id="msg-error">
+                <p>Calculation failed. <span id="msg"></span></p>
+            </div>
+            <div id="msg-neutral">
+                <p>You haven't calculated yet.</p>
+            </div>
+            <!-- End Messages -->
+            <ul id="RESULTS"></ul>
+            <h2>Additional Information</h2>
+            <h3>Source</h3>
+            <p>This calculator is written in JavaScript. Click <a href="/js/tools/cubic/cubic.js">here</a> to view the source file.</p>
+            <h3>Did You Know?</h3>
+            <p>Everytime you refresh the page, the theme color and the background color change! Try it, and it is done by JavaScript as well (with the power of <code>Math.random()</code> function).</p>
+        </div>
+        <footer>
+            <hr>
+            <p>
+                &copy; 2021-<span id="year"></span> Datario. All Rights Reserved.<br>
+                Website proudly created with &hearts; by Datario, myself.
+            </p>
+            <div class="social-bar">
+                <a href="https://www.instagram.com/mrdatario" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.youtube.com/channel/UCWS-r65dQbblkAqe_fWaJxg" target="_blank"><i class="fab fa-youtube"></i></a>
+                <a href="https://www.github.com/datario-viz" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.reddit.com/user/pgstt2" target="_blank"><i class="fab fa-reddit"></i></a>
+            </div>
+            <p><a href="/tos.html" target="_blank">Terms of Service</a>&nbsp;&nbsp;<a href="/privacy.html" target="_blank">Privacy Policy</a></p>
+        </footer>
+    </div>
+</body>
+<script src="/js/tools/cubic/cubic.js"></script>
+<script src="/js/tools/randomtheme.js"></script>
+</html>
