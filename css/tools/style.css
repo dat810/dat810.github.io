@@ -183,7 +183,7 @@ input[type="text"]:focus {
 ul li code:hover:not(h3 + p + ul li code:hover) {
     text-decoration: underline dotted;
 }
-button.calculate {
+button:not(.ddbtn, header button) {
     position: relative;
     font: 1em var(--mono);
     border: none;
@@ -195,10 +195,10 @@ button.calculate {
     box-shadow: 0 6px hsla(var(--theme), 100%, 40%, 85%);
     margin-bottom: 1rem;
 }
-button.calculate:hover {
+button:not(.ddbtn, header button):hover {
     background-color: var(--theme-color--20);
 }
-button.calculate:active {
+button:not(.ddbtn, header button):active {
     background-color: var(--theme-color--20);
     transform: translateY(2px);
     box-shadow: 0 4px hsla(var(--theme), 100%, 25%, 85%);
@@ -261,4 +261,43 @@ div[id|="msg"] {
 
 footer p {
     margin: 0;
+}
+
+/* CUBIC ONLY */
+.row {
+    display: flex;
+    justify-content: space-around;
+}
+.row .column {
+    flex: 50%;
+}
+.column h4 {
+    text-align: center;
+}
+textarea {
+    display: block;
+    font-family: var(--mono);
+    border: 2px solid var(--theme-color--20);
+}
+textarea:focus {
+    border: 2px solid var(--theme-color);
+    background-color: #fff;
+}
+@media only screen and (max-width: 768px) {
+    textarea {
+        background-color: hsla(calc(var(--theme) - 5), 100%, 90%, 99%);
+    }
+    .row {
+        flex-direction: column;
+    }
+}
+#h-results, #v-results {
+    font-size: 0.875rem;
+    resize: none;
+    margin: 0 auto;
+    width: 90%;
+}
+.copy {
+    display: block;
+    margin: 0 auto;
 }
