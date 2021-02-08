@@ -7,6 +7,8 @@
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
     <meta name="keywords" content="cubic, function, calculator, algebra">
     <meta name="description" content="This is a calculator that outputs the function values of a given array of numbers.">
+    <!-- <link rel="preconnect" href="https://fonts.gstatic.com"> -->
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;500&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet"> -->
     <meta property="og:title" content="Cubic Function Calculator | Datario's Tool Collection">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://datario-viz.github.io/tools/cubic/">
@@ -42,16 +44,16 @@
                 <li>The result will be displayed in the <a href="#results">Results</a> section.</li>
             </ol>
             <h2>The Calculator</h2>
-            <p>Type in the Function:</p>
+            <h3>Type in the Function:</h3>
             <p><span class="fx"><var>f</var>(<var>x</var>)</span> = <input type="text" id="a" placeholder="a"> <var>x</var><sup>3</sup> + <input type="text" id="b" placeholder="b"> <var>x</var><sup>2</sup> + <input type="text" id="c" placeholder="c"> <var>x</var> + <input type="text" id="d" placeholder="d"></p>
-            <p>Set up the Range:</p>
+            <h3>Set up the Range:</h3>
             <ul>
                 <li><code title="START, the starting value">START</code> <input type="text" id="start" placeholder="1"></li>
                 <li><code title="END, the ending value, inclusive">END</code> <input type="text" id="end" placeholder="10"></li>
                 <li><code title="STEP, the incrementation">STEP</code> <input type="text" id="step" placeholder="5"></li>
             </ul>
             <button type="button" onclick="calculate()" class="calculate">Calculate!</button>
-            <p id="results">Results:</p>
+            <h3 id="results">Results:</h3>
             <!-- Messages -->
             <div id="msg-error">
                 <p>Calculation failed. <span id="msg"></span></p>
@@ -61,6 +63,30 @@
             </div>
             <!-- End Messages -->
             <ul id="RESULTS"></ul>
+            <h3>Copy the Results:</h3>
+            <p>Feel free to copy these results and use it in your own projects, such as bar chart race or others. For vertical results, each result is separated by the <code>\n</code> character. For horizontal results, each result is separated by the <code>\t</code> character.</p>
+            <div class="row">
+                <div class="column">
+                    <h4>Vertical Data</h4>
+                    <button class="copy" id="vbtn" onclick="copyV()">Copy</button>
+                    <textarea name="v-results" 
+                    id="v-results" 
+                    cols="30" 
+                    rows="16" 
+                    spellcheck="false" 
+                    readonly></textarea>
+                </div>
+                <div class="column">
+                    <h4>Horizontal Data</h4>
+                    <button class="copy" id="hbtn" onclick="copyH()">Copy</button>
+                    <textarea name="h-results" 
+                    id="h-results" 
+                    cols="30" 
+                    rows="16" 
+                    spellcheck="false" 
+                    readonly></textarea>
+                </div>
+            </div>
             <h2>Additional Information</h2>
             <h3>Source</h3>
             <p>This calculator is written in JavaScript. Click <a href="/js/tools/cubic/cubic.js">here</a> to view the source file.</p>
