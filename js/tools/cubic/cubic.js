@@ -21,6 +21,8 @@ function calculate() {
     end = Number(document.getElementById("end").value);
     step = Number(document.getElementById("step").value);
     var ul = "";
+    var hresults = "";
+    var vresults = "";
     try {
         // Test
         if (a == "" && b == "" && c == "" && d == "" && start == "" && end == "" && step == "") {
@@ -52,15 +54,47 @@ function calculate() {
         }
         // Calculate
         for (let i = 0; i < range().length; i++) {
-            ul += "<li><var>f</var>(" + range()[i] + ") = " + f(range()[i]) + "</li>"
+            ul += "<li><var>f</var>(" + range()[i] + ") = " + f(range()[i]) + "</li>";
+            hresults += f(range()[i]) + "\t";
+            vresults += f(range()[i]) + "\n";
         }
         document.getElementById("RESULTS").innerHTML = ul;
+        document.getElementById("v-results").innerHTML = vresults;
+        document.getElementById("h-results").innerHTML = hresults;
         //
     }
     catch (err) {
         document.getElementById("RESULTS").innerHTML = "";
+        document.getElementById("v-results").innerHTML = "";
+        document.getElementById("h-results").innerHTML = "";
         // Display the error
         document.getElementById("msg").innerHTML = err;
         _error.style.display = "block";
     }
+}
+
+function clear() {
+    let btns = document.getElementsByClassName("copy");
+    let i;
+    for (i = 0; i < btns.length; i++) {
+        btns[i].innerHTML = "Copy";
+    }
+}
+
+function copyH() {
+    let copyTxt = document.getElementById("h-results");
+    copyTxt.select();
+    copyTxt.setSelectionRange(0,99999999);
+    document.execCommand("copy");
+    document.getElementById("hbtn").innerHTML = "Copied!";
+    setTimeout(clear, 1500);
+}
+
+function copyV() {
+    let copyTxt = document.getElementById("v-results");
+    copyTxt.select();
+    copyTxt.setSelectionRange(0,99999999);
+    document.execCommand("copy");
+    document.getElementById("vbtn").innerHTML = "Copied!";
+    setTimeout(clear, 1500);
 }
